@@ -1,9 +1,9 @@
 <?php
 
-namespace DivineOmega\Countries\DataSources;
+namespace JordJD\Countries\DataSources;
 
-use DivineOmega\Countries\Country;
-use DivineOmega\Countries\Interfaces\DataSourceInterface;
+use JordJD\Countries\Country;
+use JordJD\Countries\Interfaces\DataSourceInterface;
 use Exception;
 
 class MledozeCountriesJson implements DataSourceInterface

@@ -20,7 +20,7 @@ composer require jord-jd/php-countries
 To use PHP Countries, you must create a new `Countries` object.
 
 ```php
-use DivineOmega\Countries\Countries;
+use JordJD\Countries\Countries;
 
 $countries = new Countries;
 ```
@@ -45,7 +45,7 @@ Country details can be retrieved from the country's official or common name.
 var_dump($countries->getByName('United Kingdom'));
 
 /* 
-object(DivineOmega\Countries\Country)#146 (17) {
+object(JordJD\Countries\Country)#146 (17) {
   ["name"]=>
   string(14) "United Kingdom"
   ["officialName"]=>
@@ -112,7 +112,7 @@ You can get the data for a country by its ISO 3166-1 code. The 2 character, 3 ch
 var_dump($countries->getByIsoCode('USA'));
 
 /*
-object(DivineOmega\Countries\Country)#4693 (16) {
+object(JordJD\Countries\Country)#4693 (16) {
   ["name"]=>
   string(13) "United States"
   ["officialName"]=>
@@ -132,14 +132,14 @@ var_dump($countries->getByLanguage('German'));
 /*
 array(5) {
   [0]=>
-  object(DivineOmega\Countries\Country)#4913 (16) {
+  object(JordJD\Countries\Country)#4913 (16) {
     ["name"]=>
     string(7) "Belgium"
     ["officialName"]=>
     // etc...
   }
   [1]=>
-  object(DivineOmega\Countries\Country)#4883 (16) {
+  object(JordJD\Countries\Country)#4883 (16) {
     ["name"]=>
     string(7) "Germany"
     ["officialName"]=>
@@ -147,7 +147,7 @@ array(5) {
     // etc...
   }
   [2]=>
-  object(DivineOmega\Countries\Country)#4826 (16) {
+  object(JordJD\Countries\Country)#4826 (16) {
     ["name"]=>
     string(13) "Liechtenstein"
     ["officialName"]=>
@@ -155,7 +155,7 @@ array(5) {
     // etc...
   }
   [3]=>
-  object(DivineOmega\Countries\Country)#4808 (16) {
+  object(JordJD\Countries\Country)#4808 (16) {
     ["name"]=>
     string(10) "Luxembourg"
     ["officialName"]=>
@@ -163,7 +163,7 @@ array(5) {
     // etc...
   }
   [4]=>
-  object(DivineOmega\Countries\Country)#4871 (16) {
+  object(JordJD\Countries\Country)#4871 (16) {
     ["name"]=>
     string(7) "Namibia"
     ["officialName"]=>

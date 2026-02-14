@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\Countries;
+namespace JordJD\Countries;
 
 class Country
 {

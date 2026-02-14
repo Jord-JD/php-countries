@@ -1,8 +1,8 @@
 <?php
 
-namespace DivineOmega\Countries\Tests;
+namespace JordJD\Countries\Tests;
 
-use DivineOmega\Countries\Countries;
+use JordJD\Countries\Countries;
 use PHPUnit\Framework\TestCase;
 
 final class MissingDataFileTest extends TestCase

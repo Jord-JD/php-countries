@@ -1,9 +1,9 @@
 <?php
 
-namespace DivineOmega\Countries;
+namespace JordJD\Countries;
 
-use DivineOmega\Countries\DataSources\MledozeCountriesJson;
-use DivineOmega\Countries\Interfaces\DataSourceInterface;
+use JordJD\Countries\DataSources\MledozeCountriesJson;
+use JordJD\Countries\Interfaces\DataSourceInterface;
 
 class Countries
 {

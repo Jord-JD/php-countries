@@ -1,9 +1,9 @@
 <?php
 
-namespace DivineOmega\Countries\Tests;
+namespace JordJD\Countries\Tests;
 
-use DivineOmega\Countries\Countries;
-use DivineOmega\Countries\Country;
+use JordJD\Countries\Countries;
+use JordJD\Countries\Country;
 use PHPUnit\Framework\TestCase;
 
 final class BasicUsageTest extends TestCase

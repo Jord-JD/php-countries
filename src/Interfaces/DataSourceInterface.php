@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\Countries\Interfaces;
+namespace JordJD\Countries\Interfaces;
 
 interface DataSourceInterface
 {
