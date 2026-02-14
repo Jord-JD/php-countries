@@ -1,9 +1,9 @@
 # 🌍 PHP Countries
 
-[![Build Status](https://travis-ci.com/DivineOmega/php-countries.svg?branch=master)](https://travis-ci.com/DivineOmega/php-countries)
-[![Coverage Status](https://coveralls.io/repos/github/DivineOmega/php-countries/badge.svg?branch=master)](https://coveralls.io/github/DivineOmega/php-countries?branch=master)
+[![Build Status](https://travis-ci.com/Jord-JD/php-countries.svg?branch=master)](https://travis-ci.com/Jord-JD/php-countries)
+[![Coverage Status](https://coveralls.io/repos/github/Jord-JD/php-countries/badge.svg?branch=master)](https://coveralls.io/github/Jord-JD/php-countries?branch=master)
 [![StyleCI](https://github.styleci.io/repos/144559506/shield?branch=master)](https://github.styleci.io/repos/144559506)
-[![Packagist](https://img.shields.io/packagist/dt/divineomega/php-countries.svg)](https://packagist.org/packages/divineomega/php-countries/stats)
+[![Packagist](https://img.shields.io/packagist/dt/jord-jd/php-countries.svg)](https://packagist.org/packages/jord-jd/php-countries/stats)
 
 PHP Countries is a library that provides an elegant syntax to country data.
 
@@ -12,7 +12,7 @@ PHP Countries is a library that provides an elegant syntax to country data.
 You can install PHP Countries via Composer, as follows.
 
 ```
-composer require divineomega/php-countries
+composer require jord-jd/php-countries
 ```
 
 ## Usage
