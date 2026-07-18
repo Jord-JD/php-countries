@@ -1,10 +1,11 @@
 # 🌍 PHP Countries
 
-[![Build Status](https://travis-ci.com/Jord-JD/php-countries.svg?branch=master)](https://travis-ci.com/Jord-JD/php-countries)
-[![Coverage Status](https://coveralls.io/repos/github/Jord-JD/php-countries/badge.svg?branch=master)](https://coveralls.io/github/Jord-JD/php-countries?branch=master)
+[![Tests](https://github.com/Jord-JD/php-countries/actions/workflows/tests.yml/badge.svg)](https://github.com/Jord-JD/php-countries/actions/workflows/tests.yml)
 [![Packagist](https://img.shields.io/packagist/dt/jord-jd/php-countries.svg)](https://packagist.org/packages/jord-jd/php-countries/stats)
 
 PHP Countries is a library that provides an elegant syntax to country data.
+
+Country data comes from the newest [mledoze/countries](https://github.com/mledoze/countries) release compatible with the installed PHP version. The bundled legacy snapshot remains available as an offline fallback.
 
 ## Installation
 

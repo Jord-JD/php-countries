@@ -2,32 +2,17 @@
 
 namespace JordJD\Countries\Tests;
 
-use JordJD\Countries\Countries;
+use JordJD\Countries\DataSources\MledozeCountriesJson;
 use PHPUnit\Framework\TestCase;
+use RuntimeException;
 
 final class MissingDataFileTest extends TestCase
 {
-    private $dataFilePath = __DIR__.'/../../src/DataSources/mledoze/countries/dist/countries.json';
-
-    protected function setUp(): void
+    public function testMissingDataFileHasAClearError()
     {
-        if (file_exists($this->dataFilePath)) {
-            rename($this->dataFilePath, $this->dataFilePath.'_tmp');
-        }
-    }
+        $this->expectException(RuntimeException::class);
+        $this->expectExceptionMessage('Unable to retrieve valid Mledoze Countries JSON data.');
 
-    protected function tearDown(): void
-    {
-        if (file_exists($this->dataFilePath.'_tmp')) {
-            rename($this->dataFilePath.'_tmp', $this->dataFilePath);
-        }
-    }
-
-    public function testRetrievingAllCountriesWithNoDataFile()
-    {
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessage('Unable to retrieve MledozeCountries JSON data file. Have you ran composer update?');
-
-        $countries = (new Countries())->all();
+        new MledozeCountriesJson([__DIR__.'/data/does-not-exist.json']);
     }
 }
