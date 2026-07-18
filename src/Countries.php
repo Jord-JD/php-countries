@@ -9,14 +9,16 @@ class Countries
 {
     public $dataSource;
 
-    public function __construct()
+    public function __construct(?DataSourceInterface $dataSource = null)
     {
-        $this->setDataSource(new MledozeCountriesJson());
+        $this->setDataSource($dataSource ?: new MledozeCountriesJson());
     }
 
     public function setDataSource(DataSourceInterface $dataSource)
     {
         $this->dataSource = $dataSource;
+
+        return $this;
     }
 
     public function all()

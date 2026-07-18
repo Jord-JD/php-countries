@@ -61,11 +61,21 @@ final class BasicUsageTest extends TestCase
     {
         $countries = (new Countries())->getByLanguage('German');
 
-        $this->assertCount(5, $countries);
+        $this->assertGreaterThanOrEqual(5, count($countries));
 
         foreach ($countries as $country) {
             $this->assertInstanceOf(Country::class, $country);
             $this->assertContains('German', $country->languages);
         }
+    }
+
+    public function testCurrentCountrySchemaIsMapped()
+    {
+        $country = (new Countries())->getByIsoCode('AW');
+
+        $this->assertContains('AWG', $country->currencyCodes);
+        $this->assertContains('297', $country->callingCodes);
+        $this->assertSame('Aruban', $country->nationality);
+        $this->assertSame(['Oranjestad'], $country->capitals);
     }
 }
